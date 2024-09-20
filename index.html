@@ -1,0 +1,49 @@
+<!--Víctor Valenzuela Martínez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css"> <!-- Esto cargaria un archivo de estilo, pero no es necesario en Fiddle porque lo hace automáticamente -->
+  <script src="script.js"></script> <!--Aquí podriamos cargar los scripts, también se puede en el <body>, y pasa lo mismo que con el css de antes, en verdad aquí no estamos cargando nada-->
+</head>
+
+<body>
+  <h1><u>TOP MESES DEL AÑO</u></h1>
+  <div>
+    <h2 class=clase>Esto es un top de los meses del año (opinión totalmente acertada):</h2>
+
+
+    <ol class=meses>
+      <li class=mes1 id="check">Junio</li>
+      <li class=mes1>Octubre</li>
+      <li class=mes1>Mayo</li>
+      <li class=mes1>Agosto</li>
+      <li class=mes>Abril</li>
+      <li class=mes>Diciembre</li>
+      <li class=mes>Noviembre</li>
+      <li class=mes>Julio</li>
+      <li class=mes2>Febrero</li>
+      <li class=mes2>Marzo</li>
+      <li class=mes2>Enero</li>
+      <li class=mes2>Septiembre</li>
+    </ol>
+
+    <a href="https://www.youtube.com/watch?v=CzuhT8qNQF8" target="_blank">
+      <img alt="Enlace al video"><!--Modifica el atributo src y verás como se muestra el mensaje, pero el link (etiqueta <a>) seguirá funcionando al ser un hijo -->
+    </a>
+  </div>
+  <div>
+    <br></br>
+    <button class="botones" onclick="cambiaVisible('mes1')"> Estos meses me gustan (mucho)!!! </button>
+
+    <button class="botones" onclick="cambiaVisible('mes2')"> Estos meses no me gustan (para nada)!!!</button>
+
+  <!--button onclick="agregaColor('mes1','mes2')"> Cambia los colores!!!</button>
+  <button onclick="quitaColor('mes1','mes2')"> Cambia los colores!!!</button-->
+    <button class="botones" onclick="cambiaColor('check','mes1','mes2')">Cambia el color!!!</button>
+  </div>
+</body>
+<!--2023-2024-->
+</html>
